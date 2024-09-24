@@ -174,7 +174,7 @@ if(MZ_ZLIB)
     # Check if zlib is present
     if(NOT MZ_FORCE_FETCH_LIBS)
         find_package(ZLIBNG QUIET)
-        find_package(ZLIB QUIET)
+        find_package(ZLIB REQUIRED)
         set(ZLIB_VERSION ${ZLIB_VERSION_STRING})
     endif()
 
